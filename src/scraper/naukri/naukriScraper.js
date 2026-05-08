@@ -4,9 +4,9 @@ import { selectors } from "./naukriSelectors.js";
 
 import { createJob } from "../../core/jobSchema.js";
 
-export async function scrapeNaukriJobs(page, role = "mern-stack-developer") {
-  const url = `https://www.naukri.com/${role}-jobs`;
-  console.log(`\n--- Scraping Naukri: ${role} ---`);
+export async function scrapeNaukriJobs(page, role = "mern-stack-developer", location = "kerala") {
+  const url = `https://www.naukri.com/${role}-jobs-in-${location}`;
+  console.log(`\n--- Scraping Naukri: ${role} in ${location} ---`);
 
   await page.goto(url, {
     waitUntil: "domcontentloaded",

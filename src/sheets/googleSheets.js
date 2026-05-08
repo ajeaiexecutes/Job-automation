@@ -8,20 +8,11 @@ dotenv.config();
 
 
 // authenticate service account
-const auth = new google.auth.JWT(
-  process.env.GOOGLE_CLIENT_EMAIL,
-
-  null,
-
-  process.env.GOOGLE_PRIVATE_KEY.replace(
-    /\\n/g,
-    "\n"
-  ),
-
-  [
-    "https://www.googleapis.com/auth/spreadsheets",
-  ]
-);
+const auth = new google.auth.JWT({
+  email: process.env.GOOGLE_CLIENT_EMAIL,
+  key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n"),
+  scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+});
 
 
 // create sheets client
@@ -43,7 +34,7 @@ export async function appendToSheet(
       spreadsheetId:
         process.env.GOOGLE_SHEET_ID,
 
-      range: "Sheet1!A:G",
+      range: "A:G",
 
       valueInputOption:
         "USER_ENTERED",

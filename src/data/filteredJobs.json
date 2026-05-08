@@ -1,0 +1,30 @@
+[
+  {
+    "title": "MERN Stack Developer",
+    "company": "Coddle Technologies",
+    "location": "Kozhikode",
+    "experience": "0-2 Yrs",
+    "skills": [],
+    "link": "https://www.naukri.com/job-listings-mern-stack-developer-coddle-technologies-private-ltd-kozhikode-0-to-2-years-100226504834",
+    "platform": "Naukri",
+    "roleType": "fullstack",
+    "resumePath": "/home/ajeai/Desktop/Job hunting/resumes/fullstack/fullstack-resume.pdf",
+    "easyApply": false,
+    "applied": false,
+    "createdAt": "2026-05-08T05:05:54.611Z"
+  },
+  {
+    "title": "Full Stack (MERN) Developer Intern",
+    "company": "Infusory Future Tech Labs",
+    "location": "Kochi",
+    "experience": "0-1 Yrs",
+    "skills": [],
+    "link": "https://www.naukri.com/job-listings-full-stack-mern-developer-intern-tutar-by-infusory-kochi-0-to-1-years-050924505043",
+    "platform": "Naukri",
+    "roleType": "fullstack",
+    "resumePath": "/home/ajeai/Desktop/Job hunting/resumes/fullstack/fullstack-resume.pdf",
+    "easyApply": false,
+    "applied": false,
+    "createdAt": "2026-05-08T05:05:54.636Z"
+  }
+]

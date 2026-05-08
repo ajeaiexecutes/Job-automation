@@ -16,6 +16,12 @@ export async function detectEasyApply(page) {
     "apply now",
   ];
 
+  // Platform specific selector check
+  const liEasyApply = await page.locator("button.jobs-apply-button--top-card").isVisible();
+  const indeedEasyApply = await page.locator("[data-testid='indeed-apply-button']").isVisible();
+  
+  if (liEasyApply || indeedEasyApply) return true;
+
 
   // keywords indicating external redirects
   const blockedKeywords = [
